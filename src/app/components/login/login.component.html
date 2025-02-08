@@ -1,8 +1,8 @@
 <form class="container" [formGroup]="loginForm">
 <div>
- <h1>Login</h1>
- <h3 class="red-text" [hidden]="username.valid || username.untouched">Plesae enter valid email address.</h3>
-<input type="email" [formControl]="username" placeholder="Plese enter email" />
+ <h1>LOGIN</h1>
+ <h3 class="red-text" [hidden]="email.valid || email.untouched">Plesae enter valid email address.</h3>
+<input type="email" [formControl]="email" placeholder="Plese enter email" />
 <h3 class="red-text" [hidden]="password.valid || password.untouched">Password is required and must be greater then 6 characters.</h3>
 <input type="password" [formControl]="password" placeholder="Plese enter password"/>
 <button type="submit" [disabled]="loginForm.invalid" class="btn-green" (click)="handleLogin()"> Login </button>
